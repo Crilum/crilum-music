@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <>
       <div>
-        <Image className={styles.background} src="/rain.jpg" alt="" />
+        <Image className={styles.background} src="/rain.jpg" alt="" width={3840} height={2543}/>
       </div>
       <main className='main'>
-        <Image className="pfp" alt="Profile Picture" src="/pfp.png" />
+        <Image className="pfp" alt="Profile Picture" src="/pfp.png" width={512} height={512}/>
         <h1>Hey, I'm <div className="header-accent">Crilum</div></h1>
         <Section>
           <div className={styles.sectionHeader}>
@@ -30,7 +30,7 @@ export default function Home() {
           Check out my latest song!
         </div>
         <iframe id="ytEmbed" className={styles.ytEmbed} width="560" height="315" src="https://www.youtube.com/embed/vKp9fiv8iRc?si=bzi0HxvHhxTPnFDV" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        <p>🄯 Crilum, 2023</p>
+        <a id="github-link" href="https://github.com/Crilum/crilum-music">🄯 Crilum, 2023</a>
       </main>
     </>
   )

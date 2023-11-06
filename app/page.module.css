@@ -21,6 +21,8 @@
   border-radius: 10px;
   width: 50vw;
   height: 30vw;
+  min-width: 200px;
+  min-height: 120px;
 }
 
 .sectionHeader {

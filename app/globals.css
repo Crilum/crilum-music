@@ -40,6 +40,12 @@ hr {
     height: 75px;
     box-shadow: 4px 4px 4px #33383d;
     display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+.store:hover {
+    margin-left: 20px;
+    margin-right: 0px;
 }
 
 @media only screen and (max-width: 725px) {
@@ -87,6 +93,11 @@ hr {
     color: #78a5df;
     line-height: 75px;
     margin: 0px;
+    transition: color 0.2s ease-in;
+}
+
+.store-link:hover {
+    color: aliceblue;
 }
 
 .pfp {
@@ -101,5 +112,20 @@ hr {
 
 .header-accent {
     display: inline-block;
+    color: #78a5df;
+}
+
+#github-link {
+    color: aliceblue;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: fit-content;
+    transition: color 0.2s ease-in;
+}
+
+#github-link:hover {
     color: #78a5df;
 }
