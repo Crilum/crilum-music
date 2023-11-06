@@ -12,7 +12,7 @@ export default function Home() {
       </div>
       <main className='main'>
         <Image className="pfp" alt="Profile Picture" src="/pfp.png" />
-        <h1>Hey, I&aposm <div className="header-accent">Crilum</div></h1>
+        <h1>Hey, I'm <div className="header-accent">Crilum</div></h1>
         <Section>
           <div className={styles.sectionHeader}>
             You can find my music at:
