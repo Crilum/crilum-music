@@ -1,0 +1,30 @@
+.background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  filter: blur(6px);
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: -1;
+}
+
+.main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ytEmbed {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 50vw;
+  height: 30vw;
+}
+
+.sectionHeader {
+  font-size: 35px;
+  margin: 15px;
+  color: aliceblue;
+}
