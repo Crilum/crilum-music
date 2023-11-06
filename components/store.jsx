@@ -5,7 +5,7 @@ export default function Store({ store, url }) {
     return (
         <Link href={url}>
         <div className="store">
-            <Image src={`/icons/${store}.jpg`} width={75} height={75} className="store-icon"/>
+            <Image src={`/icons/${store}.jpg`} width={75} height={75} className="store-icon" alt={`${store} Icon`}/>
             <p className="store-link">{store}</p>
         </div>
         </Link>
