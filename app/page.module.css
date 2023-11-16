@@ -28,5 +28,6 @@
 .sectionHeader {
   font-size: 35px;
   margin: 15px;
+  margin-bottom: 7px;
   color: aliceblue;
 }

@@ -129,3 +129,20 @@ hr {
 #github-link:hover {
     color: #78a5df;
 }
+
+.song-store-icon {
+    border-radius: 17px;
+    box-shadow: 2px 2px 2px #33383d;
+    transition: all 0.2s ease-in-out;
+    margin-right: 10px;
+}
+
+.song-store-icon:hover {
+    box-shadow: 2px 2px 3px #33383d;
+    border-radius: 15px;
+}
+
+.song-store-icon-set {
+    display: block;
+    margin: 0 auto;
+}

@@ -2,13 +2,19 @@ import styles from './page.module.css'
 import Section from '@/components/section'
 import Store from '@/components/store'
 import Image from 'next/image'
+import SongStoreIconSet from '@/components/songStoreIconSet'
 
 export default function Home() {
-
+  const iconLinkURLs = {
+    spotify: "https://open.spotify.com/album/071XlFetwYNjy9hAmWEeeF?si=O30kRR7LTLqyivdbm1CyMg",
+    appleMusic: "https://music.apple.com/us/album/autumn-sea-single/1711649897",
+    amazonMusic: "https://music.amazon.com/albums/B0CKY2D59X?marketplaceId=ATVPDKIKX0DER&ref=dm_sh_bmbGQwhgUbudEQFDEubjhzAnq"
+  }
+  
   return (
     <>
       <div>
-        <Image className={styles.background} src="/rain.jpg" alt="" width={3840} height={2543}/>
+        <Image className={styles.background} src="/rain.jpg" alt="" width={1920} height={1080}/>
       </div>
       <main className='main'>
         <Image className="pfp" alt="Profile Picture" src="/pfp.png" width={512} height={512}/>
@@ -28,8 +34,11 @@ export default function Home() {
         <hr />
         <div className={styles.sectionHeader} id="latest-song">
           Check out my latest song!
+          <br/>
+          <div className="header-accent">Autumn Sea</div>
         </div>
-        <iframe id="ytEmbed" className={styles.ytEmbed} width="560" height="315" src="https://www.youtube.com/embed/vKp9fiv8iRc?si=bzi0HxvHhxTPnFDV" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <SongStoreIconSet songName="Autumn Sea" {...iconLinkURLs}/>
+        <iframe id="ytEmbed" className={styles.ytEmbed} width="560" height="315" src="https://www.youtube-nocookie.com/embed/x0wyj2BOP1A" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         <a id="github-link" href="https://github.com/Crilum/crilum-music">🄯 Crilum, 2023</a>
       </main>
     </>
